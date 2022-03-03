@@ -135,8 +135,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-qM-KBK">
-                                <rect key="frame" x="0.0" y="44" width="375" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Hello How are you?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-qM-KBK">
+                                <rect key="frame" x="16" y="440" width="349" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HkB-6y-Xmb">
+                                <rect key="frame" x="16" y="56" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -165,6 +173,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="TweetNew" destination="HkB-6y-Xmb" id="3vE-h9-K0a"/>
                         <outlet property="tweetTextView" destination="a1R-qM-KBK" id="eHR-Hq-dut"/>
                     </connections>
                 </viewController>
