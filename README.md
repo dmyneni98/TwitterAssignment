@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](https://i.imgur.com/CoGFsWX.gif)
+https://i.imgur.com/CoGFsWX.gif
 
 # Project 3 - Twitter Clone 
 
